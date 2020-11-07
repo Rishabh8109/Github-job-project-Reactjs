@@ -1,0 +1,101 @@
+.sidebar {
+     width : 300px;
+     height: 100%;
+     position: fixed;
+     z-index : 10;
+     transition : .8s;
+     transform : translateX(-500px);
+     overflow : visible;
+     background-color: whitesmoke;
+     box-shadow: 4px 0px 11px 0px #1a181896;
+}
+
+.sidebar-header {
+     width: 100%;
+     overflow: hidden;
+     height: 200px;
+    background-image: url('../../Amazon-Logo.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    background-color: rgb(66, 66, 66);
+    position: relative;
+    
+}
+.sidebar-header .close {
+    color : white;
+    font-size: 2em;
+    margin-right:10px;
+    margin-top: 10px;
+    background-color: rgb(103, 102, 102);
+    border-radius: 50%;
+    opacity: .6;
+}
+
+.sidebar.open {
+    
+    transform:translateX(0px);
+}
+
+.sidebar.close {
+     transform : translateX(-500px);
+}
+
+.sidebar-header .header_link {
+   position: absolute;
+   bottom: 30px;
+   left : 6.5rem;
+   font-size: 1rem;
+   text-decoration: none;
+}
+
+.sideBar_header_link:hover {
+     text-decoration: none;
+     background-color: whitesmoke;
+}
+.MenuIcon {
+     opacity: .8;
+     border-radius: 50%;
+    color: black;
+    display: none;
+    
+}
+ .MenuIcon:hover {
+       background-color: rgba(255, 255, 255, 0.381);
+       width: 35px;
+       height: 35px;
+       transition: .6s;
+        color: black;
+      
+ }
+
+
+ @media (max-width:600px) {
+       .MenuIcon {
+            display: block;
+       }
+ }
+ @media (max-width:360px) {
+       .MenuIcon {
+            display: block;
+       }
+       .header_nav .header_link:nth-child(1) {
+             display :none;
+       }
+       .sidebar-header {
+             background-size: 100px;
+            padding-bottom: 20px;
+       }
+       .sidebar-header .header_link {
+             transform: translateY(25px);
+       }
+ }
+
+ 
+
+
+ .sideBar_header_link .sidebar_header_option span {
+     color: black;
+     
+}
+

@@ -1,0 +1,24 @@
+.product_rating {
+     color : yellow;
+     display: flex;
+   
+}
+.product_card {
+    padding-left: 4rem;
+    padding-top: 10px;
+    line-height: 1;
+   
+}
+.product_card:hover {
+     box-shadow: 3px 3px 2px 2px whitesmoke;
+     transition: .8s;
+}
+
+.productImage {  
+    width:200px;
+    height: 200px;
+    padding: 4px;
+    z-index: -2;
+  
+}
+

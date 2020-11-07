@@ -1,16 +1,36 @@
 import AppHeader from './components/assets/AppHeader';
-import FilterInputs from './components/assets/FilterInputs';
 import JobContainer from './components/JobContainer';
-
+import {BrowserRouter as Router , Route} from 'react-router-dom';
+import JobInfo from './components/innerPage/JobInfo';
 import './App.css';
+import {useSelector } from 'react-redux';
 
 function App() {
+  const themeState = useSelector(state => state.theme);
+  console.log(themeState);
+  const changeTheme = {
+      backgroundColor : themeState.toggle ? "#000" : "#f1f6f9",
+      color: themeState.toggle ? "#fff" : "#000"
+  }
+
+  const elementTheme = {
+    backgroundColor : themeState.toggle ? "#002" : "#fff",
+    color: themeState.toggle ? "#fff" : "#000"
+  }
   return (
-      <div className="App">
-        <AppHeader />
-        <FilterInputs />
-        <JobContainer />
+    <Router>
+      <Route exact path="/">
+        <div className="App" style={changeTheme}>
+          <AppHeader />
+          <JobContainer elementTheme={elementTheme}/>
+        </div>
+      </Route>
+      <Route exact path="/job-details/:id">
+      <div className="App" style={changeTheme}>
+       <JobInfo elementTheme={elementTheme}/>
       </div>
+      </Route>
+    </Router>
 
   );
 }

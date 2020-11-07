@@ -1,1 +1,1 @@
-export {apiRequest , fetchJob , apiError } from './JobActions';
+export {apiRequest , fetchJob , apiError ,getJobInfoRequest, getJobInfo} from './JobActions';

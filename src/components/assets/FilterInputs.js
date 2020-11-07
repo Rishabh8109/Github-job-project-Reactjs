@@ -1,16 +1,16 @@
-import React,{useState , useEffect} from 'react';
+import React,{useState} from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Button from '@material-ui/core/Button';
+import useFetch from '../../CustomHook/useFetch';
 import axios from 'axios';
 import {apiRequest , fetchJob , apiError } from '../../jobContext/index';
-import {useSelector , useDispatch} from 'react-redux';
+import { useDispatch} from 'react-redux';
 
 function FilterInputs() {
  const [desc , setDesc] = useState('');
  const [location  , setlocation] = useState('');
  const [jobType , setJobtype] = useState('');
- const initialState = useSelector(state => state);
  const dispatch = useDispatch();
 
 
@@ -25,16 +25,16 @@ function FilterInputs() {
     .then(res => {
       dispatch(fetchJob(res.data));
 
-    }).then(error => {
+    }).catch(error => {
       dispatch(apiError(error));
     })
     setDesc('');
-    setlocaton('');
+    setlocation('');
     setJobtype('');
  }
 
   return (
-    <div className="filterInputs">
+    <div className="filterInputs d-none d-lg-block d-md-block">
      <form onSubmit={handleSubmit}>
         <div className="container card filterCard shadow-sm">
          <div className="row">
