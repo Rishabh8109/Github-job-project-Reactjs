@@ -18,6 +18,7 @@ function AppHeader() {
       <div className="container d-flex justify-content-between align-items-center pt-3">
          <h3 className=" text-white">devjobs</h3>
          <div className="theme-toggle d-flex align-items-center">
+            
            <WbSunnyIcon className="text-warning" />
              <Switch
                onChange={setTheme}
