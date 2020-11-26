@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/github-job-project-reactjs/static/css/main.69126253.chunk.css",
+    "main.js": "/github-job-project-reactjs/static/js/main.8197a197.chunk.js",
+    "main.js.map": "/github-job-project-reactjs/static/js/main.8197a197.chunk.js.map",
+    "runtime-main.js": "/github-job-project-reactjs/static/js/runtime-main.1072eb66.js",
+    "runtime-main.js.map": "/github-job-project-reactjs/static/js/runtime-main.1072eb66.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/github-job-project-reactjs/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.f32b504d.chunk.js": "/github-job-project-reactjs/static/js/2.f32b504d.chunk.js",
+    "static/js/2.f32b504d.chunk.js.map": "/github-job-project-reactjs/static/js/2.f32b504d.chunk.js.map",
+    "index.html": "/github-job-project-reactjs/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/github-job-project-reactjs/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.69126253.chunk.css.map": "/github-job-project-reactjs/static/css/main.69126253.chunk.css.map",
+    "static/js/2.f32b504d.chunk.js.LICENSE.txt": "/github-job-project-reactjs/static/js/2.f32b504d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1072eb66.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.f32b504d.chunk.js",
+    "static/css/main.69126253.chunk.css",
+    "static/js/main.8197a197.chunk.js"
+  ]
+}
